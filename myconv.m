@@ -1,6 +1,6 @@
 
 function [finalImage] = myconv(Image, Masking)
-
+dfdfd
 % How to: myconv(Image, Masking)
 % Image - The image wanted to be masked
 % Masking - The masking filter
