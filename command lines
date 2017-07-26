@@ -1,0 +1,18 @@
+I=imread('brandom.png');
+>> I=I(:,:,1);
+>> D=I;
+>> conv2(D,ones(3));
+D=double(D);
+>> conv2(D,ones(3));
+>> conv2(D,ones(3),'same');
+>> D=logical(ans)-logical(D);
+>> imshow(D);
+>> [v,r,c]=f8encoder(I);
+>> result=f8decoder(v,r,c);
+>> imshow(result);
+>> figure(1);imshow(D);figure(2);imshow(result);
+>> figure(1);binary(D);figure(2);binary(result);
+>> first=binary(D);
+>> second=binary(result);
+>> first-second;
+>> figure(1);binary(D);figure(2);binary(result);
