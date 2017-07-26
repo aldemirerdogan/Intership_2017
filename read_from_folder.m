@@ -11,4 +11,5 @@ for a = 1:slice_number
    filename = ['liverp_1' num2str(a-1,'%02d')];
    img = imread(filename);
    liverp_v(:,:,a) = imbinarize(img);
+   % you can skip the imbinarize since the data is already binary
 end
