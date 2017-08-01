@@ -4,7 +4,6 @@ output = [ ]
 if all pixels == 0
 part = [size(1), size(2)]
 output = cat ( output, part )
-cat to the end
 
 while all pixels ~= 0
 
