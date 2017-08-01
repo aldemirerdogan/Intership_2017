@@ -9,6 +9,7 @@ if there is only one pixel
 output = [ r,c, -8 ]
 
 else
+f8runner
 output = vector, r, c, -8
 cat outputs
 
