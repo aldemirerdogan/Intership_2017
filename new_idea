@@ -1,5 +1,4 @@
 encoder
-
 if all pixels == 0
 output = [size(1), size(2)]
 cat to the end
