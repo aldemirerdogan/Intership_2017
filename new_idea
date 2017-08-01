@@ -1,17 +1,21 @@
 encoder
+output = [ ]
+
 if all pixels == 0
-output = [size(1), size(2)]
+part = [size(1), size(2)]
+output = cat ( output, part )
 cat to the end
 
 while all pixels ~= 0
 
 if there is only one pixel
-output = [ r,c, -8 ]
+part = [ r,c, -8 ]
+output = cat (output, part)
 
 else
 f8runner
-output = vector, r, c, -8
-cat outputs
+part = vector, r, c, -8
+output = cat (output, part)
 
 
 decoder
