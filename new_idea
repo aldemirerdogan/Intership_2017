@@ -1,0 +1,17 @@
+encoder
+
+while all pixels ~= 0
+output = vector, size(1), size(2), r, c, -8
+cat outputs
+
+
+decoder
+input = output of encoder
+
+while ( size vector )
+hold=1
+num = find '-8'
+use size and create ZEROS ( num - 4, num - 3 )
+use r and c to initialize ( num - 2, num - 1 )
+run vector from 'hold' to 'num-4'
+hold = num+1
