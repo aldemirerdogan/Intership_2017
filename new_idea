@@ -1,9 +1,7 @@
-encoder
+encoder = [output, size(1), size(2) ]
 output = [ ]
 
-if all pixels == 0
-part = [size(1), size(2)]
-output = cat ( output, part )
+size(1), size(2)
 
 while all pixels ~= 0
 
