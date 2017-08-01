@@ -9,6 +9,7 @@ while all pixels ~= 0
 if there is only one pixel
 output = [ r,c, -8 ]
 
+else
 output = vector, r, c, -8
 cat outputs
 
