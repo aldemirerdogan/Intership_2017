@@ -29,7 +29,7 @@ if num-4 - hold == 2
 [r,c] = 1
 
 
-
+else
 use r and c to initialize ( num - 2, num - 1 )
 run vector from 'hold' to 'num-4'
 hold = num+1
