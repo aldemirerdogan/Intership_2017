@@ -7,6 +7,7 @@ cat to the end
 while all pixels ~= 0
 
 if there is only one pixel
+output = [ r,c, -8 ]
 
 output = vector, r, c, -8
 cat outputs
@@ -23,6 +24,11 @@ hold=1
 for ( counter )
 
 num = find '-8'
+
+if num-4 - hold == 2
+[r,c] = 1
+
+
 
 use r and c to initialize ( num - 2, num - 1 )
 run vector from 'hold' to 'num-4'
