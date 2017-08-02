@@ -29,7 +29,7 @@ check 8 neighbors of the H(r,c)
 [min_value, min_location] = min(neighborhood_vector);
 direction_value = min_location - 1;
 
-[r, c] = direction(r, c, direction_value);
+[r, c] = f8_direction(r, c, direction_value);
 chain_vector(1, counter) = direction_value;
 counter = counter + 1;
 H(r,c) = H(r,c) + 1;
