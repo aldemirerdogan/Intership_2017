@@ -1,6 +1,6 @@
 I=boundary(I);
 
-f8encoder (I) = [ chain_vector, row, column, size_row, size_column ]
+f8_encoder (I) = [ chain_vector, row, column, size_row, size_column ]
 
 size_row is defined for the matrix I;
 
