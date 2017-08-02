@@ -1,4 +1,4 @@
-direction (r, c, direction_value) = [r, c]
+f8_direction (r, c, direction_value) = [r, c]
 
 if direction_value == 0
   c=c+1;
