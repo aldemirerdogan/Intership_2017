@@ -1,0 +1,23 @@
+direction (r, c, direction_value) = [r, c]
+
+if direction_value == 0
+  c=c+1;
+elseif direction_value == 1
+  r=r-1;
+  c=c+1;
+elseif direction_value == 2
+  r=r-1;
+elseif direction_value == 3
+  r=r-1;
+  c=c-1;
+elseif direction_value == 4
+  c=c-1;
+elseif direction_value == 5
+  r=r+1;
+  c=c-1;
+elseif direction_value == 6
+  r=r+1;
+elseif direction_value == 7
+  r=r+1;
+  c=c+1;
+end
