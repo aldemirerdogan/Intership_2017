@@ -6,7 +6,7 @@ size_row is defined for the matrix I;
 
 counter=1;
 
-H is a new matrix with zero padding to I;
+H is a new matrix with zero padding to the matrix I;
 
 find the top and leftmost element, H(r,c);
 H(r,c) = H(r,c) + 1;
