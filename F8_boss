@@ -1,0 +1,37 @@
+I=boundary(I);
+
+f8encoder (I) = [ chain_vector, row, column, size_row, size_column ]
+
+size_row is defined for the matrix I;
+
+counter=1;
+
+H is a new matrix with zero padding to I;
+
+find the top and leftmost element, H(r,c);
+H(r,c) = H(r,c) + 1;
+
+while find(H,1) ~= 0
+
+check 8 neighbors of the H(r,c)
+  { order: 0, 1, 2, 3, 4, 5, 6, 7
+  0  H(r,c+1)
+  1  H(r-1,c+1)
+  2  H(r-1,c)
+  3  H(r-1,c-1)
+  4  H(r,c-1)
+  5  H(r+1,c-1)
+  6  H(r+1,c)
+  7  H(r+1,c+1)
+  neighborhood_vector = [ 0, 1, 2, 3, 4, 5, 6, 7]
+  }
+  
+[min_value, min_location] = min(neighborhood_vector);
+direction_value = min_location - 1;
+
+[r, c] = direction(r, c, direction_value);
+chain_vector(1, counter) = direction_value;
+counter = counter + 1;
+H(r,c) = H(r,c) + 1;
+
+end
