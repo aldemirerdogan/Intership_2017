@@ -1,4 +1,4 @@
-function [H] = f8decoder(newvector,r,c)
+function [H] = f8decoder(newvector,r,c,r_size,c_size)
 
 % newvector=[0,0,0,1,2,4,5,6,7,0,0,0];
 
@@ -9,7 +9,7 @@ counter=1;
 
 length=size(newvector);
 
-H=zeros(length(2)*2+r+c);
+H=zeros(r_size,c_size);
 H(r,c)=1;
 while counter<=length(2)
     
