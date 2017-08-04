@@ -4,7 +4,7 @@ function [newImage] = binary2(I)
 sImage=size(I);
 
 for r=1:sImage(1) % find the top of the image
-    for c=1:sImage(2)-1
+    for c=1:sImage(2)
         if I(r,c)==1
             r_top=r;
             break;
@@ -17,7 +17,7 @@ end
 
 
 for r=sImage(1):-1:1 % find the bottom of the image
-    for c=1:sImage(2)-1
+    for c=1:sImage(2)
         if I(r,c)==1
             r_bottom=r;
             break;
@@ -29,7 +29,7 @@ for r=sImage(1):-1:1 % find the bottom of the image
 end
 
 for c=1:sImage(2) % find the leftmost of the image
-    for r=1:sImage(1)-1
+    for r=1:sImage(1)
         if I(r,c)==1
             c_left=c;
             break;
@@ -41,7 +41,7 @@ for c=1:sImage(2) % find the leftmost of the image
 end
 
 for c=sImage(2):-1:1 % find the rightmost of the image
-    for r=1:sImage(1)-1
+    for r=1:sImage(1)
         if I(r,c)==1
             c_right=c;
             break;
