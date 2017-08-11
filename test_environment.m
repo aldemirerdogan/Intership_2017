@@ -29,6 +29,7 @@ for n=1:size_I(3)
     F=logical(F);
     F_fill=logical(F_fill);
     F_fill=F_fill(2:end-1,2:end-1);
+    F=F(2:end-1,2:end-1);
     
     
     % Testing the original image and the one from the contour
@@ -37,7 +38,7 @@ for n=1:size_I(3)
     % Testing the contour filled image and chaincode filled image
     test_boundary_chain(1,counter)=isequal(B_fill,F_fill);
     
-%     test(1,counter)=isequal(B,F);
+    test(1,counter)=isequal(B,F);
     counter=counter+1;
 end
     
